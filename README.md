@@ -1,5 +1,7 @@
 //----------------------* Airline Management System *--------------------------------\\
+
 => ProjectOverview <=
+
 This project is a desktop-based Airline Management System developed using Core Java (Swing) and MySQL database.
 The system focuses on managing airline operations such as passenger details, flight booking, cancellation, and payment tracking.
 
@@ -16,6 +18,7 @@ The main emphasis of this project is on:
 
 
 --Project Screens--
+
 1-Login Interface Screen
 
 <img width="723" height="458" alt="Screenshot 2026-03-19 104125" src="https://github.com/user-attachments/assets/e8d6cef4-26a6-4d5a-91f0-7e0ebdf92d54" />
@@ -93,6 +96,7 @@ The system retrieves booking details from the database and performs cancellation
 
 
 Description:
+
 This module displays payment-related information such as ticket ID, price, journey date, and status.
 It demonstrates the use of database joins and queries to combine booking and payment data, highlighting backend data processing.
 
