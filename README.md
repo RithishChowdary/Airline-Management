@@ -23,7 +23,7 @@ The application uses Java Swing for the interface and JDBC for database communic
 
 | Technology | Purpose |
 |---|---|
-| Core Java | Main application logic and OOP implementation |
+| Core Java | Main application logic and OOP implementation,Exception Handling |
 | Java Swing | Desktop GUI screens, forms, menus, tables, and buttons |
 | JDBC | Database connectivity and SQL execution |
 | MySQL | Backend relational database |
