@@ -1,109 +1,3 @@
-//----------------------* Airline Management System *--------------------------------\\
-
-=> ProjectOverview <=
-
-This project is a desktop-based Airline Management System developed using Core Java (Swing) and MySQL database.
-The system focuses on managing airline operations such as passenger details, flight booking, cancellation, and payment tracking.
-
-The main emphasis of this project is on:
-        ->Core Java logic (OOP, JDBC)
-        ->Database design and operations
-        ->Efficient handling of real-time data
-
-🛠️Technologies Used:
-      ->Core Java (Primary Logic)
-      ->Java Swing (GUI)
-      ->JDBC (Database Connectivity)
-      ->MySQL (Backend Database)
-
-
---Project Screens--
-
-1-Login Interface Screen
-
-<img width="723" height="458" alt="Screenshot 2026-03-19 104125" src="https://github.com/user-attachments/assets/e8d6cef4-26a6-4d5a-91f0-7e0ebdf92d54" />
-
-
-Description:
-This screen represents the main login interface of the Airline Management System. It provides input fields for the user to enter their username and password.
-The interface is designed with a background image related to aviation to enhance user experience. It also includes two primary actions:
-.Login button for existing users to access the system
-.SignUp button for new users to create an account
-
-2-Passenger Dashboard
-<img width="1772" height="1077" alt="Screenshot 2026-03-19 105021" src="https://github.com/user-attachments/assets/d51ad7b7-b70d-43c9-be48-ab6ea40939af" />
-
-Description:
-This screen represents the main dashboard after login. It provides navigation options such as managing passengers, booking flights, viewing flight details, cancellations, billing, and logout.
-The system uses Core Java event handling to manage navigation and integrates with the database to fetch user-specific data dynamically.
-
-3-Add Passenger Details
-
-<img width="1773" height="1073" alt="Screenshot 2026-03-19 105142" src="https://github.com/user-attachments/assets/ddc50a64-a7db-470f-a631-39302a03533f" />
-
-
-Description:
-This module allows users to insert new passenger records into the system. The data entered (name, age, address, passport, etc.) is validated using Core Java validation logic and stored in the MySQL database using JDBC PreparedStatements, ensuring data integrity and security.
-
-4-View Passenger Details
-
-<img width="1914" height="594" alt="Screenshot 2026-03-19 105233" src="https://github.com/user-attachments/assets/7336dafa-ec33-43d9-8c4b-f50f0dce519a" />
-
-
-Description:
-This screen displays all passenger records in a tabular format. Data is retrieved from the database using SQL SELECT queries and displayed using Java Swing components.
-It demonstrates efficient database querying and result set handling in Core Java.
-
-5-Update Passenger Details
-
-<img width="1771" height="1073" alt="Screenshot 2026-03-19 105311" src="https://github.com/user-attachments/assets/a062257f-8e71-43a1-a9b0-b8bdb32ebdef" />
-
-
-Description:
-This module enables updating existing passenger information. The system fetches current data from the database and allows modifications.
-Updates are performed using SQL UPDATE queries via JDBC, showcasing real-time database interaction and consistency.
-
-6-Fight Information Module
-
-<img width="1768" height="1076" alt="Screenshot 2026-03-19 105545" src="https://github.com/user-attachments/assets/674e8efe-3add-4720-b0ac-911fc5df0f29" />
-
-
-Description:
-This screen displays available flight details such as flight code, destination, class, and price.
-The data is dynamically fetched from the database, demonstrating Core Java integration with relational data models and efficient query handling.
-
-7-Book Flight
-
-<img width="1632" height="947" alt="Screenshot 2026-03-19 105448" src="https://github.com/user-attachments/assets/5cd20b6e-6ea4-401e-9f83-11dbc01d1445" />
-
-
-Description:
-This module handles flight booking operations. It captures user selections such as source, destination, class, and generates a ticket ID.
-The booking process is implemented using Core Java business logic, and the data is inserted into the database using JDBC transactions, ensuring reliability.
-
-8-Cancel Flight Ticket
-
-<img width="1916" height="1056" alt="Screenshot 2026-03-19 105720" src="https://github.com/user-attachments/assets/3280ac79-39d2-47ab-b296-9b6ec2eb4e2c" />
-
-
-Description:
-This screen allows users to cancel booked tickets by selecting a ticket ID.
-The system retrieves booking details from the database and performs cancellation using SQL DELETE/UPDATE operations, maintaining accurate records.
-
-9-Payment Details
-
-<img width="1425" height="868" alt="Screenshot 2026-03-19 105943" src="https://github.com/user-attachments/assets/30be92eb-8d8b-4bb6-a7d2-3b54b3ee699e" />
-
-
-Description:
-
-This module displays payment-related information such as ticket ID, price, journey date, and status.
-It demonstrates the use of database joins and queries to combine booking and payment data, highlighting backend data processing.
-
-~ Conclusion:
-This project demonstrates how Core Java can be effectively used with databases to build a complete real-world application.
-The focus is on backend logic, database interaction, and data consistency.
------------------------------------------------------------------------------------------------------------------------------------------------
 # Airline Management System
 
 A desktop-based Airline Management System built with Core Java, Java Swing, JDBC, and MySQL. The project manages common airline operations such as user login, passenger profile management, flight search, ticket booking, ticket cancellation, booked ticket history, cancelled ticket history, and payment status tracking.
@@ -463,31 +357,59 @@ The project uses the following Maven dependencies:
 
 ## Screenshots
 
-Add your project screenshots in a folder such as:
+### Login Interface
 
-```text
-docs/screenshots/
-```
+The login screen provides username and password fields with login and signup actions.
 
-Then update the paths below.
+<img width="723" height="458" alt="Login Interface Screen" src="https://github.com/user-attachments/assets/e8d6cef4-26a6-4d5a-91f0-7e0ebdf92d54" />
 
-| Screen | Preview |
-|---|---|
-| Login Interface | `docs/screenshots/login-interface.png` |
-| Passenger Dashboard | `docs/screenshots/passenger-dashboard.png` |
-| Add Passenger Details | `docs/screenshots/add-passenger-details.png` |
-| View Passenger Details | `docs/screenshots/view-passenger-details.png` |
-| Update Passenger Details | `docs/screenshots/update-passenger-details.png` |
-| Flight Information Module | `docs/screenshots/flight-information.png` |
-| Book Flight | `docs/screenshots/book-flight.png` |
-| Cancel Flight Ticket | `docs/screenshots/cancel-flight-ticket.png` |
-| Payment Details | `docs/screenshots/payment-details.png` |
+### Passenger Dashboard
 
-Example Markdown image format:
+The main dashboard provides menu-based navigation for passenger management, flight booking, flight details, cancellations, billing, and logout.
 
-```md
-![Login Interface](docs/screenshots/login-interface.png)
-```
+<img width="1772" height="1077" alt="Passenger Dashboard" src="https://github.com/user-attachments/assets/d51ad7b7-b70d-43c9-be48-ab6ea40939af" />
+
+### Add Passenger Details
+
+This module allows users to add new passenger records with details such as name, age, address, phone number, email, nationality, gender, and passport number.
+
+<img width="1773" height="1073" alt="Add Passenger Details" src="https://github.com/user-attachments/assets/ddc50a64-a7db-470f-a631-39302a03533f" />
+
+### View Passenger Details
+
+Passenger records are fetched from MySQL and displayed in a tabular Swing view.
+
+<img width="1914" height="594" alt="View Passenger Details" src="https://github.com/user-attachments/assets/7336dafa-ec33-43d9-8c4b-f50f0dce519a" />
+
+### Update Passenger Details
+
+This screen allows users to select an existing passenger, load current information, and update the stored record.
+
+<img width="1771" height="1073" alt="Update Passenger Details" src="https://github.com/user-attachments/assets/a062257f-8e71-43a1-a9b0-b8bdb32ebdef" />
+
+### Flight Information Module
+
+The flight information screen displays available flight details such as flight code, destination, class, and price.
+
+<img width="1768" height="1076" alt="Flight Information Module" src="https://github.com/user-attachments/assets/674e8efe-3add-4720-b0ac-911fc5df0f29" />
+
+### Book Flight
+
+The booking module captures source, destination, class, passenger, journey details, and generated ticket ID before saving the booking.
+
+<img width="1632" height="947" alt="Book Flight" src="https://github.com/user-attachments/assets/5cd20b6e-6ea4-401e-9f83-11dbc01d1445" />
+
+### Cancel Flight Ticket
+
+This module allows users to select a booked ticket, review its details, enter a cancellation reason, and update the ticket status.
+
+<img width="1916" height="1056" alt="Cancel Flight Ticket" src="https://github.com/user-attachments/assets/3280ac79-39d2-47ab-b296-9b6ec2eb4e2c" />
+
+### Payment Details
+
+The payment details screen displays ticket ID, price, journey date, journey time, username, and booking status for successful bookings.
+
+<img width="1425" height="868" alt="Payment Details" src="https://github.com/user-attachments/assets/30be92eb-8d8b-4bb6-a7d2-3b54b3ee699e" />
 
 ## Core Java Concepts Demonstrated
 
@@ -520,4 +442,3 @@ This project demonstrates how Core Java can be used to build a complete database
 ## Conclusion
 
 The Airline Management System is a practical Core Java desktop application that connects Java Swing interfaces with a MySQL backend using JDBC. It provides a complete workflow for managing passengers, flights, tickets, cancellations, and payment status, making it a strong academic and portfolio project for demonstrating Java database application development.
-
